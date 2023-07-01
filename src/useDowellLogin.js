@@ -3,12 +3,12 @@ import { useSearchParams } from "react-router-dom";
 import axios from "axios";
 
 const dowellLoginUrl =
-  "https://100014.pythonanywhere.com/?redirect_url=" +
+  "https://100045.pythonanywhere.com/?redirect_url=" +
   window.location.origin +
   "/100018-dowellWorkflowAi-testing/%23";
 
 const dowellLogoutUrl =
-  "https://100014.pythonanywhere.com/sign-out?redirect_url=" +
+  "https://100045.pythonanywhere.com/sign-out?redirect_url=" +
   window.location.origin +
   "/100018-dowellWorkflowAi-testing/%23";
 
@@ -19,7 +19,7 @@ const getUserInfoOther = async (session_id) => {
 
   const res = await axios({
     method: "post",
-    url: "https://100093.pythonanywhere.com/api/userinfo/",
+    url: "https://100045.pythonanywhere.com/api/userinfo/",
     data: session,
   });
 
@@ -33,7 +33,7 @@ const getUserInfo = async (session_id) => {
 
   const res = await axios({
     method: "post",
-    url: "https://100014.pythonanywhere.com/api/userinfo/",
+    url: "https://100045.pythonanywhere.com/api/userinfo/",
     data: session,
   });
 
